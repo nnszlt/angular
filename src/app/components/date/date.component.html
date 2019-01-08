@@ -1,0 +1,33 @@
+<div>
+  <h3 class="tc">{{title}}</h3>
+  <ul>
+    <li class="list_none">
+      <h4>1.定义数据并渲染数据<span class="red">声明数据而不是定义变量</span></h4>
+    </li>
+    <li>不用 var 定义 用public 定义</li>
+    <li>public title: string = "标题" ;//规定类型的定义 <span class="red">推荐这种</span></li>
+    <li>也可以 title: string = "标题" ; </li>
+    <li>或者 title = "标题" ; </li>
+    <li>title:any=4564;<span class="red">any 类型可以定义任何</span></li>
+    <li class="list_none">
+      <h5> 声明属性的几种方式：</h5>
+    </li>
+    <li> public 共有 *（默认） 可以在这个类里面使用、也可以在类外面使用</li>
+    <li> protected 保护类型 他只有在当前类和它的子类里面可以访问</li>
+    <li> private 私有 只有在当前类才可以访问这个属性</li>
+    <li class="list_none">
+      <h5> 渲染对象中的数据</h5>
+    </li>
+    <li>名字{{man.name}}，性别{{man.sex}}</li>
+    <li class="list_none">
+      <h5> 赋值</h5>
+    </li>
+    <li>{{unknow}}</li>
+    <li class="list_none">
+      <h4>2.绑定元素的属性</h4>
+    </li>
+    <li [id]="ids" [class]="ids" [title]="ids">绑定id class title <span class="red">用 [属性名]="数据" </span> </li>
+  </ul>
+
+  <hr>
+</div>
